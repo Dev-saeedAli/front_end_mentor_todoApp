@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Dev saeedali">
+  <meta name="keyword" content="html, css, javascript">
+  <meta name="description" content="A todo App made with html, css and javascript. It is made up from the design of front end mentor">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/app.js" defer></script>
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div class="container dark">
+  <!-- header -->
+  <header class="header">
+    <h1>TODO</h1>
+   
+      <i class="fa-solid fa-moon"></i>
+      <i class="fa-solid fa-sun none"></i>
+ 
+  </header>
+  <!--x header x-->
+
+  <!-- main -->
+  <main>
+    <!-- search section -->
+    <section class="search dark">
+      <h2 class="offset">Search header</h2>
+      <form class="search__form">
+        <label for="input-search">
+          <i class="fa-solid fa-circle"></i>
+        </label>
+        <input type="text" class="search__input-search" id="input-search" placeholder="create a new todo...">
+      </form>
+    </section>
+    <!--x search section x-->
+    <section class="todo__items">
+      <h2 class="offset">todo Items</h2>
+    <!--x todo-list x-->
+      <div class="todo__items-todo-list">
+        <!-- todoitems -->
+
+        <!-- generating from javascript -->
+        <!-- <div class="todo-content dark">
+          <i class="fa-solid fa-circle"></i>
+          <span class="todo__items-todo__text">Complete Javascript course  </span>
+          <i class="fa-solid fa-close"></i>
+        </div> -->
+        <!-- generating from javascript -->
+        
+        <!--x todoitems x-->
+      </div>
+       
+      <!-- item-details -->
+      <div class="todo__items__todo-info dark">
+        <span class="todo__left">
+          5 items left
+        </span>
+        <span class="todo__right">
+          Clear Completed
+        </span>
+      </div>
+    </section>
+    <!--x item-details x-->
+    <!--x todo-list x-->
+
+    <!-- filter todo list -->
+    <section class="todoFilters dark">
+      <h3 class="offset">Todo filters btn</h3>
+      <button class="todoFilters__btn-all filter__btn">All</button>
+      <button class="todoFilters__btn-active filter__btn">Active</button>
+      <button class="todoFilters__btn-completed filter__btn">Completed</button>
+    </section>
+    <!--x filter todo list x-->
+  </main>
+  <!--x main x-->
+  </div>
+</body>
+</html>
