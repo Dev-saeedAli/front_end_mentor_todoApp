@@ -60,7 +60,7 @@ body{
     max-width: 1350px;
     -webkit-box-shadow: var(--BOX-SHADOW);
             box-shadow: var(--BOX-SHADOW);
-    border-radius: 10px;
+    border-radius: 2px ;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -84,6 +84,7 @@ input{
     outline: none;
     border: none;
     font-family: inherit;
+    background:  transparent;
 }
 figcaption,
 .offset{
@@ -101,7 +102,7 @@ figcaption,
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 20px 10px 0px;
+    padding: 30px 10px 0px;
     background: url("../images/bg-desktop-light.jpg") center / cover no-repeat;
     min-height: 30vh;
 }
@@ -163,6 +164,9 @@ main{
             justify-content: flex-start;
     margin: 0px 0px 20px;
     padding: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 @media  screen and (orientation:landscape){
@@ -229,9 +233,15 @@ main{
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 15px 10px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .todo__items .todo-content.dark{
     background: var(--VERY-DARK-DESATURATED-BLUE-THEME-DARK);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
 .todo__items .todo-content .todo__items-todo__text{
     -webkit-box-flex: 1;

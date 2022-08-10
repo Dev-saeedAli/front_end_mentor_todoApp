@@ -142,10 +142,12 @@
       localStorage.setItem("todos", JSON.stringify(filteredTodo))
       getTodosFromLocal(currentDeviceTheme, "All")
     }
-
+    
     // clear all items in local storage and updating getTodosfromlocal func
     todoClear.addEventListener("click", ()=>{
-        localStorage.clear()
+        let localTodos = JSON.parse(localStorage.getItem("todos")); 
+        const filteredCompleted = localTodos.filter(todo => todo.status !== "completed")
+        localStorage.setItem("todos", JSON.stringify(filteredCompleted))
         todoLength.innerHTML = `${localStorage.length} Items Left`
         getTodosFromLocal(currentDeviceTheme, "All")
     })
